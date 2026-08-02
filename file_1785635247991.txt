@@ -1,0 +1,90 @@
+Namaste! 🙏
+
+Haan, bilkul! Yeh rahe kuch **aur simple Python code** jo aap turant try kar sakte hain:
+
+---
+
+### 🎲 1. Random Dice Roller
+
+```python
+import random
+
+print("Press Enter to roll dice, or type 'exit' to quit")
+
+while True:
+    user = input("Enter dabaiye: ")
+    if user.lower() == "exit":
+        break
+    
+    dice = random.randint(1, 6)
+    print(f"🎲 Aapka number: {dice}")
+```
+
+---
+
+### 🔐 2. Simple Password Generator
+
+```python
+import random
+import string
+
+length = int(input("Password kitna lamba chahiye? "))
+
+characters = string.ascii_letters + string.digits + "!@#$%"
+password = ''.join(random.choice(characters) for _ in range(length))
+
+print(f"Generated Password: {password}")
+```
+
+---
+
+### 📐 3. Area Calculator (Circle, Rectangle, Triangle)
+
+```python
+print("Kiska area nikalna hai?")
+print("1. Circle\n2. Rectangle\n3. Triangle")
+choice = int(input("Option (1/2/3): "))
+
+if choice == 1:
+    r = float(input("Radius: "))
+    area = 3.1416 * r * r
+    print(f"Circle area: {area:.2f}")
+elif choice == 2:
+    l = float(input("Length: "))
+    w = float(input("Width: "))
+    print(f"Rectangle area: {l * w}")
+elif choice == 3:
+    b = float(input("Base: "))
+    h = float(input("Height: "))
+    print(f"Triangle area: {0.5 * b * h}")
+else:
+    print("Galat option!")
+```
+
+---
+
+### ❓ 4. Simple Quiz (GK)
+
+```python
+score = 0
+
+questions = [
+    ("India ki capital?", "delhi"),
+    ("2+2 ka value?", "4"),
+    ("Python ke creator?", "guido van rossum")
+]
+
+for q, ans in questions:
+    user = input(q + " ").strip().lower()
+    if user == ans:
+        score += 1
+        print("✅ Sahi!")
+    else:
+        print(f"❌ Galat. Sahi jawab: {ans}")
+
+print(f"\nAapke {len(questions)} mein se {score} sahi hue!")
+```
+
+---
+
+Yeh sare code **copy-paste** kar ke terminal mein chala sakte hain. Kya aap kisi aur specific topic ka code chahte hain? Batao, main help karunga! 🚀
