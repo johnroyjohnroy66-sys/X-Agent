@@ -1,0 +1,92 @@
+Namaste! 🙏
+
+Haan, bilkul! Main aapko kuch **simple Python code** de sakta hoon jo aap directly copy-paste kar ke chala sakte hain.
+
+---
+
+### ⭐ 1. Number check (Positive/Negative/Zero)
+
+```python
+num = int(input("Ek number daaliye: "))
+
+if num > 0:
+    print("Positive number hai ✅")
+elif num < 0:
+    print("Negative number hai ❌")
+else:
+    print("Zero hai 0️⃣")
+```
+
+---
+
+### ⭐ 2. Simple Table Generator
+
+```python
+num = int(input("Jiska table chahiye, wo number likhiye: "))
+
+for i in range(1, 11):
+    print(f"{num} × {i} = {num * i}")
+```
+
+**Output example:**
+```
+5 × 1 = 5
+5 × 2 = 10
+...
+5 × 10 = 50
+```
+
+---
+
+### ⭐ 3. Vowel or Consonant Checker
+
+```python
+char = input("Ek alphabet likhiye: ").lower()
+
+vowels = "aeiou"
+
+if char in vowels:
+    print(f"'{char}' vowel hai 🔊")
+else:
+    print(f"'{char}' consonant hai 🔤")
+```
+
+---
+
+### ⭐ 4. Factorial Finder
+
+```python
+num = int(input("Factorial nikalne ke liye number dijiye: "))
+factorial = 1
+
+for i in range(1, num + 1):
+    factorial *= i
+
+print(f"{num}! = {factorial}")
+```
+
+---
+
+### ⭐ 5. Personal Greeting Program
+
+```python
+name = input("Aapka naam kya hai? ")
+age = input("Aapki umar kya hai? ")
+city = input("Aap kahan rehte hain? ")
+
+print("\n--- Aapka Profile ---")
+print(f"Naam: {name}")
+print(f"Umar: {age} saal")
+print(f"City: {city}")
+print("Aapka swagat hai! 🎉")
+```
+
+---
+
+Aap chahte hain ki main aapko kisi specific topic ka code den? Jaise:
+- Loop wala code
+- List/dictionary wala code
+- Game wala code
+- Kuch aur?
+
+Batao, main ready hoon! 🚀
